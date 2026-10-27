@@ -1,0 +1,30 @@
+name: Validacao dos notebooks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Compilar aquisição e checar notebook
+        run: |
+          python -m py_compile 01_previsao_volatilidade/obter_dados.py
+          python - <<'PY'
+          import ast, json
+          from pathlib import Path
+          p=Path("01_previsao_volatilidade/03_AM_PETR4_USDBRL.ipynb")
+          notebook=json.loads(p.read_text(encoding="utf8"))
+          assert notebook["nbformat"]==4
+          code=[c for c in notebook["cells"] if c["cell_type"]=="code"]
+          for index,cell in enumerate(code,1):
+              ast.parse("".join(cell["source"]), filename=f"celula_{index}")
+          print(f"Notebook valido: {len(code)} celulas Python")
+          PY
