@@ -24,3 +24,7 @@ O notebook espera ser executado **a partir desta pasta** e lê os arquivos `dado
 
 ## Evolução
 Estudos posteriores de dados intradiários, modelos sequenciais (LSTM/GRU) e Transformers serão incorporados **somente após validação metodológica**, preservando a distinção entre resultados concluídos e experimentos em andamento.
+
+### Atualização de dados
+
+Na pasta deste trabalho execute `python obter_dados.py` para preencher somente históricos ausentes; use `python obter_dados.py --force` apenas se desejar sobrescrever os históricos com versões atuais. Consulte [as instruções completas](dados/README.md). O resultado reproduz o **protocolo principal**, mas não garante métricas idênticas ao snapshot original, especialmente se o provedor de dados alterar preços ou disponibilidade.
