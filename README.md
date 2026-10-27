@@ -8,7 +8,7 @@ O objetivo é apresentar o **problema, os dados, a metodologia, os resultados e 
 
 ### 01 — Previsão da volatilidade futura da PETR4 e do USD/BRL
 **Disciplina:** Aprendizado de Máquina  
-**Estado:** experimento clássico documentado; dados externos de entrada pendentes de publicação.
+**Estado:** experimento clássico documentado; históricos públicos obtidos automaticamente, com triagem inicial identificada separadamente.
 
 [Ver notebook e documentação](01_previsao_volatilidade/README.md) · [Abrir notebook](01_previsao_volatilidade/03_AM_PETR4_USDBRL.ipynb)
 
@@ -39,7 +39,7 @@ Aprendizado-de-Maquina/
 
 ## Execução
 
-Instale dependências com `python -m pip install -r requirements.txt`. Abra o notebook **na pasta do trabalho** e disponibilize os arquivos descritos em [dados/README.md](01_previsao_volatilidade/dados/README.md). Os CSVs originais ainda não estão no GitHub; portanto, esta primeira publicação permite examinar os resultados salvos, mas **não garante uma execução ponta a ponta**.
+Instale dependências com `python -m pip install -r requirements.txt`. Abra o notebook **na pasta do trabalho**: a primeira célula prepara automaticamente os históricos públicos de PETR4, BCB PTAX e FRED. Também é possível executar `python obter_dados.py` nessa pasta. Os arquivos originais da triagem de candidatos não foram recuperados: sem eles, a seleção histórica permanece uma decisão fixa documentada, não uma nova execução da busca. Resultados podem variar com revisões das APIs, e a coleta depende da disponibilidade e das condições dos provedores.
 
 ## Princípios metodológicos
 
