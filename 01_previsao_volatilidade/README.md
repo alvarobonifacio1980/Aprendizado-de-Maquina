@@ -20,7 +20,7 @@ O notebook preserva as 40 células do trabalho publicado anteriormente em `Anali
 ## Reprodução
 O notebook espera ser executado **a partir desta pasta** e lê os arquivos `dados/*.csv`. Consulte [dados/README.md](dados/README.md).
 
-**Estado atual:** notebook histórico publicado, mas os CSVs de entrada ainda não estão versionados. As saídas gravadas no notebook são resultados do experimento original; não representam uma nova execução feita nesta publicação. Evite executar todas as células até disponibilizar os insumos exatos.
+**Estado atual:** notebook histórico publicado, mas o notebook ainda depende de CSVs locais gerados em etapas anteriores de aquisição pública e triagem que não estão incluídas nesta versão. As saídas gravadas no notebook são resultados do experimento original; não representam uma nova execução feita nesta publicação. Evite executar todas as células até disponibilizar os insumos exatos.
 
 ## Evolução
 Estudos posteriores de dados intradiários, modelos sequenciais (LSTM/GRU) e Transformers serão incorporados **somente após validação metodológica**, preservando a distinção entre resultados concluídos e experimentos em andamento.
