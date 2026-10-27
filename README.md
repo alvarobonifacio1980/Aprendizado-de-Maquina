@@ -4,6 +4,24 @@ Projetos desenvolvidos durante o **Mestrado em Ciência da Computação (PPGCC/U
 
 O objetivo é apresentar o **problema, os dados, a metodologia, os resultados e as limitações** de cada experimento, com ênfase em comparação com baselines, avaliação temporal e prevenção de *data leakage*.
 
+## Evidências do experimento
+
+Os dois gráficos a seguir foram **extraídos das saídas do notebook publicado**, sem recalcular métricas ou criar resultados sintéticos.
+
+### Comparação de desempenho — PETR4
+
+![RMSE no teste de modelos de previsão de volatilidade da PETR4](assets/graficos/rmse_petr4.png)
+
+**Leitura:** o RMSE compara a magnitude dos erros dos modelos e do baseline no conjunto de teste. Valores menores indicam menor erro na métrica apresentada, mas não comprovam rentabilidade financeira nem superioridade em outros períodos.
+
+### Diagnóstico dos resíduos
+
+![Histograma dos resíduos do modelo SVR PETR4-only](assets/graficos/histograma_residuos.svg)
+
+**Leitura:** a distribuição dos resíduos ajuda a investigar erros sistemáticos, dispersão e valores extremos, complementando MAE e RMSE. O gráfico não substitui validação temporal ou testes adicionais de robustez.
+
+[Consultar notebook completo](01_previsao_volatilidade/03_AM_PETR4_USDBRL.ipynb)
+
 ## Trabalhos publicados
 
 ### 01 — Previsão da volatilidade futura da PETR4 e do USD/BRL
