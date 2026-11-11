@@ -39,4 +39,4 @@ A **TCN-ENS3** liderou na avaliação agregada, mas teve QLIKE menor que XGBoost
 
 **Competências demonstradas:** Python, PyTorch, LSTM, GRU, TCN, Transformer causal, engenharia de sequências, validação temporal e análise crítica.
 
-**Limite:** o resultado TCN refere-se à **média de três redes**. A vantagem observada não comprova desempenho superior em novas amostras independentes.
+O resultado apresentado para TCN corresponde à **média de três redes**, uma abordagem de combinação de previsões.
