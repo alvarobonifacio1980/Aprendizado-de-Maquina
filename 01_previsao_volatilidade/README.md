@@ -1,6 +1,6 @@
 # 01 — Previsão de volatilidade: PETR4 e USD/BRL
 
-Projeto da disciplina **Aprendizado de Máquina — PPGCC/UFJF**.
+Projeto independente de Machine Learning aplicado à previsão de séries temporais financeiras.
 
 ## Problema
 Prever a volatilidade observada nos **cinco pregões seguintes** em duas séries financeiras: PETR4 e USD/BRL (PTAX). A PETR4 é o ativo principal; o câmbio também é avaliado como série com alvo próprio. Uma série externa de câmbio (FRED DEXBZUS) foi investigada como preditor adicional para PETR4.
@@ -23,7 +23,7 @@ O notebook espera ser executado **a partir desta pasta** e lê os arquivos `dado
 **Estado atual:** notebook histórico publicado, mas o notebook ainda depende de CSVs locais gerados em etapas anteriores de aquisição pública e triagem que não estão incluídas nesta versão. As saídas gravadas no notebook são resultados do experimento original; não representam uma nova execução feita nesta publicação. Evite executar todas as células até disponibilizar os insumos exatos.
 
 ## Evolução
-Estudos posteriores de dados intradiários, modelos sequenciais (LSTM/GRU) e Transformers serão incorporados **somente após validação metodológica**, preservando a distinção entre resultados concluídos e experimentos em andamento.
+Estudos independentes posteriores de dados intradiários, incluindo **Machine Learning, Deep Learning e ensembles**, estão disponíveis na [coleção de estudos PETR4 RV60](../estudos/petr4_intradiario/README.md). O horizonte de 60 minutos desses estudos difere do horizonte de cinco pregões deste projeto.
 
 ### Atualização de dados
 
