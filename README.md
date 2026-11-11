@@ -1,8 +1,22 @@
-# Aprendizado de Máquina — Portfólio Acadêmico
+# Aprendizado de Máquina — Portfólio de Pesquisa Aplicada
 
-Projetos desenvolvidos durante o **Mestrado em Ciência da Computação (PPGCC/UFJF)**, com foco em aplicações de Aprendizado de Máquina, séries temporais financeiras e previsão de volatilidade.
+Projetos independentes de **análise e pesquisa aplicada**, com foco em Machine Learning, Deep Learning, séries temporais financeiras e previsão de volatilidade.
 
 O objetivo é apresentar o **problema, os dados, a metodologia, os resultados e as limitações** de cada experimento, com ênfase em comparação com baselines, avaliação temporal e prevenção de *data leakage*.
+
+## Estudos de caso — PETR4 intradiária
+
+Três estudos resumidos de **pesquisa aplicada independente**: métricas, gráficos em português e interpretação profissional, sem disponibilizar o notebook completo ou as bases históricas.
+
+| Estudo | Conteúdo |
+|---|---|
+| [Machine Learning e referências históricas](estudos/petr4_intradiario/01_baselines_e_ml.md) | Regressão Gamma, EWMA, Floresta Aleatória e XGBoost |
+| [Deep Learning em séries temporais](estudos/petr4_intradiario/02_deep_learning.md) | LSTM, GRU, TCN e Transformer causal |
+| [Ensembles e robustez](estudos/petr4_intradiario/03_ensembles_e_robustez.md) | ENS50, estabilidade por períodos e medidas alternativas |
+
+[**Visão geral dos três estudos**](estudos/petr4_intradiario/README.md)
+
+> Resultados exploratórios: prever volatilidade não equivale a prever a direção do preço ou obter rentabilidade.
 
 ## Evidências do experimento
 
@@ -20,12 +34,12 @@ Os dois gráficos a seguir foram **extraídos das saídas do notebook publicado*
 
 **Leitura:** a distribuição dos resíduos ajuda a investigar erros sistemáticos, dispersão e valores extremos, complementando MAE e RMSE. O gráfico não substitui validação temporal ou testes adicionais de robustez.
 
-[Consultar notebook completo](01_previsao_volatilidade/03_AM_PETR4_USDBRL.ipynb)
+[Consultar o notebook do projeto histórico](01_previsao_volatilidade/03_AM_PETR4_USDBRL.ipynb)
 
-## Trabalhos publicados
+## Outros projetos publicados
 
 ### 01 — Previsão da volatilidade futura da PETR4 e do USD/BRL
-**Disciplina:** Aprendizado de Máquina  
+**Área:** Machine Learning aplicado a dados financeiros  
 **Estado:** experimento clássico documentado; históricos públicos obtidos automaticamente, com triagem inicial identificada separadamente.
 
 [Ver notebook e documentação](01_previsao_volatilidade/README.md) · [Abrir notebook](01_previsao_volatilidade/03_AM_PETR4_USDBRL.ipynb)
@@ -36,9 +50,9 @@ Os dois gráficos a seguir foram **extraídos das saídas do notebook publicado*
 
 O notebook foi transferido do repositório `Analise-de-Dados` **sem alterar suas células, resultados ou gráficos**.
 
-## Pesquisa em andamento
+## Estudos adicionais em desenvolvimento
 
-A investigação atual do mestrado amplia o estudo para dados intradiários e arquiteturas de aprendizado profundo, incluindo LSTM, GRU e Transformers. Esses experimentos serão publicados em etapas, **após consolidação e validação**; não há afirmação de superioridade antecipada.
+A previsão de volatilidade diária constitui outra investigação, com alvo e protocolo próprios. Não se confundem esses resultados com a coleção intradiária.
 
 ## Estrutura
 
@@ -70,6 +84,6 @@ Instale dependências com `python -m pip install -r requirements.txt`. Abra o no
 **Tecnologias:** Python, Pandas, NumPy, Scikit-learn, Matplotlib e Jupyter.
 
 ---
-**Autor:** Álvaro Bonifácio · Mestrando em Ciência da Computação — UFJF
+**Autor:** Álvaro Bonifácio · pesquisa aplicada e projetos independentes
 
 **Licença:** o código do repositório está sob MIT; bases de terceiros mantêm suas respectivas condições de uso.
