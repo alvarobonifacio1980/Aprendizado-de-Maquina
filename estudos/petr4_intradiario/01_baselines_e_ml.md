@@ -40,4 +40,4 @@ O **XGBoost A2** liderou em QLIKE, o **A4** em MSE e o **A3** em MAE da volatili
 
 **Competências demonstradas:** Python, séries temporais, engenharia de atributos, Floresta Aleatória, XGBoost, seleção de hiperparâmetros, validação cronológica e interpretação de resultados.
 
-**Limite:** avaliação exploratória em 480 pregões e oito blocos; o histórico foi consultado durante a seleção de modelos. Não constitui prova de generalização independente.
+**Avaliação:** 480 pregões e oito blocos temporais, com seleção e comparação de diferentes configurações.
