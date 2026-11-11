@@ -8,7 +8,7 @@ Prever a volatilidade observada nos **cinco pregões seguintes** em duas séries
 ## Notebook
 [03_AM_PETR4_USDBRL.ipynb](03_AM_PETR4_USDBRL.ipynb)
 
-O notebook preserva as 40 células do trabalho publicado anteriormente em `Analise-de-Dados`, inclusive saídas, gráficos e interpretações.
+O notebook contém código, resultados, gráficos e interpretações do estudo.
 
 ## Métodos
 - Construção de atributos e alvos com horizonte de cinco pregões
@@ -20,11 +20,11 @@ O notebook preserva as 40 células do trabalho publicado anteriormente em `Anali
 ## Reprodução
 O notebook espera ser executado **a partir desta pasta** e lê os arquivos `dados/*.csv`. Consulte [dados/README.md](dados/README.md).
 
-**Estado atual:** notebook histórico publicado, mas o notebook ainda depende de CSVs locais gerados em etapas anteriores de aquisição pública e triagem que não estão incluídas nesta versão. As saídas gravadas no notebook são resultados do experimento original; não representam uma nova execução feita nesta publicação. Evite executar todas as células até disponibilizar os insumos exatos.
+As fontes públicas e o procedimento de aquisição de históricos estão documentados no projeto.
 
 ## Evolução
 Estudos independentes posteriores de dados intradiários, incluindo **Machine Learning, Deep Learning e ensembles**, estão disponíveis na [coleção de estudos PETR4 RV60](../estudos/petr4_intradiario/README.md). O horizonte de 60 minutos desses estudos difere do horizonte de cinco pregões deste projeto.
 
 ### Atualização de dados
 
-Na pasta deste trabalho execute `python obter_dados.py` para preencher somente históricos ausentes; use `python obter_dados.py --force` apenas se desejar sobrescrever os históricos com versões atuais. Consulte [as instruções completas](dados/README.md). O resultado reproduz o **protocolo principal**, mas não garante métricas idênticas ao snapshot original, especialmente se o provedor de dados alterar preços ou disponibilidade.
+Na pasta deste trabalho execute `python obter_dados.py` para preencher somente históricos ausentes; use `python obter_dados.py --force` apenas se desejar sobrescrever os históricos com versões atuais. Consulte [as instruções completas](dados/README.md). Os resultados acompanham a versão das séries históricas consultadas.
