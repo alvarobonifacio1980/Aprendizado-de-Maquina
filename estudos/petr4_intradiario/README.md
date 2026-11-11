@@ -1,8 +1,8 @@
 # PETR4 intradiária — portfólio de pesquisa aplicada
 
-Três estudos **independentes** sobre previsão da variância realizada nos 60 minutos seguintes (**RV60**) de PETR4, a partir de candles de cinco minutos. São resumos profissionais de atividades de análise e modelagem; não são recomendações financeiras.
+Três estudos **independentes** sobre previsão da variância realizada nos 60 minutos seguintes (**RV60**) de PETR4, a partir de candles de cinco minutos. A coleção destaca as técnicas e os resultados de modelagem preditiva.
 
-**Escala dos experimentos:** 35.800 origens de previsão, 480 pregões e oito blocos temporais de avaliação. Os horizontes futuros se sobrepõem; as origens não são observações independentes.
+**Escala dos experimentos:** 35.800 origens de previsão, 480 pregões e oito blocos temporais de avaliação. A avaliação considerou oito blocos temporais.
 
 | Estudo | Conteúdo | Principal aprendizado |
 |---|---|---|
@@ -12,6 +12,6 @@ Três estudos **independentes** sobre previsão da variância realizada nos 60 m
 
 **Como ler:** QLIKE, MSE e MAE são métricas de erro; valores menores são melhores. A QLIKE pode ser negativa, e diferenças da métrica não representam percentuais.
 
-**Escopo:** os estudos apresentam análises, resultados e gráficos, **sem disponibilizar notebooks de treinamento, bases de dados ou código integral**. O histórico foi reutilizado durante o desenvolvimento, de modo que as conclusões são **exploratórias**, sem teste final independente. Não se prevê direção de preços nem rentabilidade.
+**Contexto da avaliação:** comparação exploratória das arquiteturas na base histórica estudada.
 
 **Autoria:** Álvaro Bonifácio — estudos próprios de pesquisa e desenvolvimento em ciência de dados.
