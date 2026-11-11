@@ -39,4 +39,4 @@ O **ENS50** apresentou a melhor QLIKE e o menor MAE nesse histórico; a **TCN li
 
 **Competências demonstradas:** ensembles, validação temporal, comparação de métricas, análise por regime, testes de sensibilidade, gráficos e interpretação estatística.
 
-**Limite:** apesar dos intervalos exploratórios locais, o histórico foi consultado reiteradamente durante o desenvolvimento. Isso **não constitui comprovação independente de superioridade futura**, nem prevê direção ou lucro.
+**Interpretação:** a análise exploratória permite comparar modelos e períodos, mas a estabilidade futura depende de novas condições de mercado.
